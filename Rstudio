@@ -1,5 +1,5 @@
 sudo docker pull rocker/tidyverse
-sudo docker run -d -p 127.0.0.1:8787:8787 -e PASSWORD=9612 -e DISABLE_AUTH=true -v /home/nikos/Documents/Work:/home/rstudio --restart always --name work rocker/tidyverse
+sudo docker run -d -p 127.0.0.1:8787:8787 -e ROOT=true -e DISABLE_AUTH=true -v /home/nikos/Documents/Work:/home/rstudio --restart always --name work rocker/tidyverse
 
 sudo docker pull rocker/tidyverse: Downloads the latest Rstudio image that contains tidyverse and other tools.
 
@@ -10,7 +10,7 @@ sudo docker run -d -p 127.0.0.1:8787:8787 -e DISABLE_AUTH=true -v /home/nikos/Do
 -p 127.0.0.1:8787:8787: RStudio without authentication.127.0. 0.1 is localhost. 
 This will never ever be accessible from remote machines, it only points to the local machine.
 
--e PASSWORD=9612: Password for sudo commands
+-e ROOT=true: User as sudo
 
 -e DISABLE_AUTH=true: No password to open
 
