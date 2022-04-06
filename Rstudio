@@ -19,3 +19,11 @@ This will never ever be accessible from remote machines, it only points to the l
 --restart always: Start container on startup.
 
 --name work: Name your container!
+
+
+###############################################################
+EXTRA
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install libxt6
