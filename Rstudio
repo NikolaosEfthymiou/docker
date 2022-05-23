@@ -1,6 +1,8 @@
 sudo docker pull rocker/tidyverse
 sudo docker run -d -p 127.0.0.1:8787:8787 -e ROOT=true -e DISABLE_AUTH=true -v /home/nikos/Documents/Work:/home/rstudio --restart always --name work rocker/tidyverse
 
+sudo docker run -d -p 127.0.0.1:8787:8787 -e ROOT=true -e DISABLE_AUTH=true -v C:\Users\nikol\OneDrive\Documents\Docker\rstudio:/home/rstudio --restart always --name work rocker/tidyverse
+
 sudo docker pull rocker/tidyverse: Downloads the latest Rstudio image that contains tidyverse and other tools.
 
 sudo docker run -d -p 127.0.0.1:8787:8787 -e DISABLE_AUTH=true -v /home/nikos/Documents/Work:/home/tidyverse/Documents rocker/tidyverse:
